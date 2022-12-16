@@ -1,0 +1,446 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    
+<TableLayout
+    android:id="@+id/tablelayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:shrinkColumns="1"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="#F6D860">
+    
+<TextView
+    android:id="@+id/judul"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Curiculum Vitae"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="20pt"
+    android:typeface="serif"
+    android:gravity="center"
+    android:textColor="#EFEFEF"
+    android:background="#B7CADB"
+    android:paddingTop="5dp"/>
+<ImageView
+    android:id="@+id/ket"
+    android:layout_width="300px"
+    android:layout_height="300px"
+    android:scaleType="fitCenter"
+    android:src="@drawable/foto"/>
+
+	<TextView 
+	android:id="@id/ket"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" "
+    android:textSize="6pt"
+    android:typeface="serif"
+    android:gravity="center"
+    android:textColor="#EFEFEF"
+	android:paddingTop="5dp"/>
+
+
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/nama"
+	        android:layout_width="100dp"
+   			android:layout_height="wrap_content"
+   			android:text="Nama"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginTop="5pt"/>
+	    
+	    <TextView 
+	        android:id="@+id/isinama"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Nur Halimah"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginTop="5pt"
+    		android:layout_marginLeft="20db"
+    		android:onClick="isinama"/>
+	</TableRow>
+	    
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/ttl"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="TTL"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isittl"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Bumi Jaya, 15 Oktober 1994"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"/>
+	</TableRow>
+
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/jkelamin"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="Jenis Kelamin"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isijkelamin"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Perempuan"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAlignment="center"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/agama"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="Agama"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isiagama"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Islam"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/warga"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="Kewarganegaraan"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isiwarga"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Indonesia"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/status"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="Status"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isistatus"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Menikah"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/alamat"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="Alamat"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isialamat"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Jl. Timun, Abung Semuli, Lampung"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"/>
+	</TableRow>
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/nohp"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="No. Hp"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isinohp"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": +62 857 6977 9019"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/email"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="Email"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isiemail"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": info.nurhalimah@gmail.com"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"
+    		android:autoLinks="Email"/>
+	</TableRow>
+	
+<TextView
+    android:id="@+id/pendidikan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pendidikan"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="12pt"
+    android:typeface="serif"
+    android:gravity="center"
+    android:textColor="#EFEFEF"
+    android:background="#B7CADB"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="5dp"/>	
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/sd"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2000-2006"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isisd"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": SDN 1 Bumi jaya"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/smp"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2007-2009"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isismp"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": SMPN 1 Atap Bumi Jaya"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"
+    		android:textAligment="center"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/sma"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2010-2012"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isisma"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": SMAN 1 Semuli Jaya"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/d1"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2014-2015"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isid1"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": D1 Umar Usman Business School"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/kuliah"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2020-sekarang"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	    <TextView 
+	        android:id="@+id/isikuliah"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=": Universitas Siber Asia"
+    		android:textSize="8pt"
+    		android:typeface="serif"
+    		android:layout_marginLeft="20db"/>
+	</TableRow>
+	
+<TableLayout
+    android:id="@+id/tablelayout2">
+<TextView
+    android:id="@+id/kemampuan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Kemampuan"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="12pt"
+    android:typeface="serif"
+    android:gravity="center"
+    android:textColor="#EFEFEF"
+    android:background="#B7CADB"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="5dp"/>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/ket1"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="1.Design Grafis"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/ket2"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2.Videografi"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/ket3"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2.SEO"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+
+<TableLayout
+    android:id="@+id/tablelayout3">
+<TextView
+    android:id="@+id/peng"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Project Experience"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="12pt"
+    android:typeface="serif"
+    android:gravity="center"
+    android:textColor="#EFEFEF"
+    android:background="#B7CADB"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="5dp"/>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/peng1"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="1.Administrasi Tender Depatemen Perhubungan 2014"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/peng2"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="2.Administrasi Tender PT.KAI 2015"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/peng3"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="3.Depatemen Perhubungan 2015"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/peng4"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="4.Mwmbuat Free Ebook Tutorial Google Plus"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView 
+	        android:id="@+id/peng5"
+	        android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="5.Owner of Cleanersia 2015-sekarang"
+    		android:textSize="8pt"
+    		android:typeface="serif"/>
+	</TableRow>
+
+	<Button 
+	    android:id="@+id/tombol"
+	    android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:text="keluar"/>
+	</TableLayout></TableLayout>"
+</TableLayout>
+</ScrollView>
